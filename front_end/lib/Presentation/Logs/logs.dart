@@ -98,7 +98,7 @@ class LogTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final formattedDate =
-        DateFormat('yyyy-MM-dd – HH:mm:ss').format(DateTime.parse(timestamp));
+        DateFormat('dd-MM-yy – HH:mm').format(DateTime.parse(timestamp));
 
     return GestureDetector(
       onTap: () {

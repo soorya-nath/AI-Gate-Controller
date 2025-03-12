@@ -10,15 +10,16 @@ import 'package:front_end/widgets/home/welcomebanner.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
+bool isopened = false;
+String open_cmd='Opened';
+String close_cmd="Closed";
 class CustomPage extends StatefulWidget {
   @override
   State<CustomPage> createState() => _CustomPageState();
 }
-
 class _CustomPageState extends State<CustomPage> {
   List<Map<String, dynamic>> logs = [];
-  bool isopened = false;
+  
   String gateStatus = 'Closed';
   @override
   Widget build(BuildContext context) {
@@ -140,6 +141,7 @@ class _CustomPageState extends State<CustomPage> {
   }
 
   Card gate_status_card() {
+    
     return Card(
       elevation: 1,
       child: Container(
@@ -166,8 +168,8 @@ class _CustomPageState extends State<CustomPage> {
                   setState(() {
                     isopened = value;
                     isopened == true
-                        ? gateStatus = 'Opened'
-                        : gateStatus = 'Closed';
+                        ? gateStatus = open_cmd
+                        : gateStatus = close_cmd;
                   });
                 },
                 activeColor: Colors.green,

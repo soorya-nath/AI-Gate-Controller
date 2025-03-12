@@ -65,6 +65,7 @@
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:front_end/Presentation/Home/custompage.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 
 class FaceRecognitionService {
@@ -119,7 +120,7 @@ class FaceRecognitionService {
 
   /// Connect to the Socket.IO server and listen for face recognition results
   void connectToServer() {
-    socket = IO.io('http://192.168.1.6:5000', <String, dynamic>{
+    socket = IO.io('https://afff-117-221-249-156.ngrok-free.app', <String, dynamic>{
       'transports': ['websocket'],
       'autoConnect': true,
     });
@@ -129,8 +130,10 @@ class FaceRecognitionService {
 
       if (data['status'] == 'success') {
         showNotification("Access Granted", "Registered driver. Gate Opened!");
+       isopened=true;
       } else {
         showNotification("Security Alert", "Unauthorized Access Detected!");
+        isopened=false;
       }
     });
   }
