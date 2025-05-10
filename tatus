@@ -1,0 +1,22 @@
+[33m38ed6f0[m[33m ([m[1;36mHEAD[m[33m)[m HEAD@{0}: reset: moving to HEAD@{4}
+[33m85173fe[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to HEAD@{2}
+[33mc29310c[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: pull --rebase origin main (start): checkout c29310cddf17b0a9a2d69f3ab5c05b25615186a8
+[33m85173fe[m[33m ([m[1;32mmain[m[33m)[m HEAD@{3}: rebase (abort): returning to refs/heads/main
+[33m85173fe[m[33m ([m[1;32mmain[m[33m)[m HEAD@{4}: rebase (abort): returning to refs/heads/main
+[33m38ed6f0[m[33m ([m[1;36mHEAD[m[33m)[m HEAD@{5}: commit: Home page Ui updated
+[33ma35ab9e[m HEAD@{6}: commit: Initial commit for Heroku deployment
+[33m6638ac9[m HEAD@{7}: commit: Logs added
+[33m4937bb8[m HEAD@{8}: commit: backend added
+[33mc04d595[m HEAD@{9}: reset: moving to origin/main
+[33m85173fe[m[33m ([m[1;32mmain[m[33m)[m HEAD@{10}: commit: face comparision added
+[33ma886491[m HEAD@{11}: commit: Track large files with Git LFS
+[33m1af035e[m HEAD@{12}: commit: Face comparision added
+[33m4217dc5[m HEAD@{13}: commit: Track large files with LFS
+[33ma9302a6[m HEAD@{14}: commit: Notification sent
+[33m6b49201[m HEAD@{15}: commit: Notification sent successfully
+[33mc04d595[m HEAD@{16}: commit: Homepage completed
+[33m3129081[m HEAD@{17}: commit: Some file ignored
+[33m9520f0b[m HEAD@{18}: commit: Supabase connected
+[33m9dc92b4[m HEAD@{19}: commit: Reg Page completed
+[33mb949580[m HEAD@{20}: Branch: renamed refs/heads/master to refs/heads/main
+[33mb949580[m HEAD@{22}: commit (initial): first commit
